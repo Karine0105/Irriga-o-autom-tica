@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/irrigacao.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 40px;
+  font-size: 16px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.villas-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.villas-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.villa-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.villa-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.villa-title {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #5c3a69;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #d2691e;
+  margin-bottom: 10px;
+}
+
+.details, .description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.villa-card p {
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão Voltar para Home */
+.button-home {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-home {
+  padding: 10px 20px;
+  background-color: #ffffff88;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.btn-home:hover {
+  background-color: #fcfcfc;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  header {
+     height: 60vh;
+  }
+
+  .title h1 {
+     font-size: 40px;
+  }
+
+  .btn {
+     font-size: 16px;
+     padding: 8px 16px;
+  }
+
+  .logo img {
+     width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+     font-size: 30px;
+  }
+
+  .btn {
+     font-size: 14px;
+     padding: 6px 12px;
+  }
+
+  header {
+     height: 50vh;
+  }
+
+  .main {
+     padding: 10px;
+  }
+}

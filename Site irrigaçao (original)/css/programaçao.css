@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/irrigacao.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+
+.villa-highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.villa-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background-color: #5c3a69;
+    margin: 20px 0;
+}
+
+.villa-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.villa-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff82;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+/* Estilos Responsivos */
+
+/* Para tablets e dispositivos médios */
+@media (max-width: 768px) {
+    .villa-highlight {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-container, .image-container {
+        width: 100%;
+    }
+
+    .text-container {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .villa-title {
+        font-size: 2.5rem;
+    }
+
+    .villa-description {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Para smartphones e dispositivos pequenos */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .villa-title {
+        font-size: 2rem;
+    }
+
+    .villa-description {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .villa-highlight {
+        padding: 10px;
+    }
+}
